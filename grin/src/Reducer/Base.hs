@@ -1,8 +1,11 @@
 {-# LANGUAGE LambdaCase, TupleSections, BangPatterns #-}
+{-# LANGUAGE DeriveGeneric, DeriveAnyClass #-}
 module Reducer.Base where
 
 import Data.Map (Map)
 import qualified Data.Map as Map
+import Control.DeepSeq (NFData)
+import GHC.Generics (Generic)
 
 import Text.PrettyPrint.ANSI.Leijen
 
@@ -22,7 +25,7 @@ data RTVal
   | RT_Var          Name
   | RT_Loc          Int
   | RT_Undefined
-  deriving (Show, Eq, Ord)
+  deriving (Show, Eq, Ord, Generic, NFData)
 
 
 instance Pretty RTVal where

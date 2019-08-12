@@ -134,7 +134,6 @@ library
     megaparsec,
     pretty-show,
     vector,
-    deepseq,
     recursion-schemes,
     ansi-wl-pprint,
     monad-gen,
