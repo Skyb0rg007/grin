@@ -1,17 +1,16 @@
-resolver: lts-13.27
-
-# due to functor-infix
-# allow-newer: true
+resolver: lts-14.0
 
 packages:
   - 'grin'
 
 extra-deps:
-  # - QuickCheck-GenT-0.2.0
-  # - megaparsec-6.5.0
-  # - neat-interpolation-0.3.2.2
+  - megaparsec-6.5.0
+  - neat-interpolation-0.3.2.2
+  - QuickCheck-GenT-0.2.0
   - github: csabahruska/llvm-hs
     commit: 868e23a13942703255979369defdb49ac57b6866
+    sha256: 172a5b0476c5cc3374a1da1a53b2ac24d3268bf38a80783f9e030f4c6665c470
+    size: 9873278
     subdirs:
       - llvm-hs
       - llvm-hs-pure

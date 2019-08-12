@@ -5,6 +5,27 @@
 
 packages:
 - completed:
+    hackage: megaparsec-6.5.0@sha256:a1dfed92863607ea9f7609a0578d486761a052a4d01aaff95b90f25da2564346,6119
+    pantry-tree:
+      size: 2533
+      sha256: 8420b8dc9fa39c8e98ee0211e86d387813158bedf40ac1bf5cb5590b4ee7b509
+  original:
+    hackage: megaparsec-6.5.0
+- completed:
+    hackage: neat-interpolation-0.3.2.2@sha256:17c208f1171187e2d6beac5375f78d56458b872757616ebb2602c2bec4412879,2679
+    pantry-tree:
+      size: 448
+      sha256: 46048ca91755d557dc8aee3ebf911f4fad901786e3190fdd527b10597aa4405e
+  original:
+    hackage: neat-interpolation-0.3.2.2
+- completed:
+    hackage: QuickCheck-GenT-0.2.0@sha256:d11b7b4a3f7648895eff66376a00f763821ee955ce42a37fb918213a8eae88d6,1458
+    pantry-tree:
+      size: 293
+      sha256: a3e3065581974edfdc6951d894d93ed134e6136caa6f5e8593a58c2e039e076b
+  original:
+    hackage: QuickCheck-GenT-0.2.0
+- completed:
     size: 9873278
     subdir: llvm-hs
     url: https://github.com/csabahruska/llvm-hs/archive/868e23a13942703255979369defdb49ac57b6866.tar.gz
@@ -18,8 +39,10 @@ packages:
       size: 13720
       sha256: 42b82ae62cfc58c1cc0d237807f1d5ba7dd763dcd677a3b8db99a8fe32e3380a
   original:
+    size: 9873278
     subdir: llvm-hs
     url: https://github.com/csabahruska/llvm-hs/archive/868e23a13942703255979369defdb49ac57b6866.tar.gz
+    sha256: 172a5b0476c5cc3374a1da1a53b2ac24d3268bf38a80783f9e030f4c6665c470
 - completed:
     size: 9873278
     subdir: llvm-hs-pure
@@ -34,8 +57,10 @@ packages:
       size: 2652
       sha256: 79c70971c04c9cdf6fb215aa30ace60e00b54d57017ed5f72b72d10e7e22fec0
   original:
+    size: 9873278
     subdir: llvm-hs-pure
     url: https://github.com/csabahruska/llvm-hs/archive/868e23a13942703255979369defdb49ac57b6866.tar.gz
+    sha256: 172a5b0476c5cc3374a1da1a53b2ac24d3268bf38a80783f9e030f4c6665c470
 - completed:
     hackage: functor-infix-0.0.5@sha256:cea21a321031f556d7a21b51e049493e7cb78baf64dd63f0d1a36de01c4c735b,661
     pantry-tree:
@@ -66,7 +91,7 @@ packages:
     hackage: llvm-hs-pretty-0.6.1.0@sha256:54785b205bc9a267513b539eb8073f9f576e01da196720871bc894520e712e16,1670
 snapshots:
 - completed:
-    size: 500539
-    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/13/27.yaml
-    sha256: 690db832392afe55733b4c7023fd29b1b1c660ee42f1fb505b86b07394ca994e
-  original: lts-13.27
+    size: 523443
+    url: https://raw.githubusercontent.com/commercialhaskell/stackage-snapshots/master/lts/14/0.yaml
+    sha256: 283773e7120f5446d961eab35ea95c9af9c24187cc178537bd29273200a05171
+  original: lts-14.0
