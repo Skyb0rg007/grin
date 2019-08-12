@@ -113,15 +113,17 @@ entriesToTypeEnv xs = flip execState emptyTypeEnv $ do
 
 -- parses a type environment (without code)
 parseTypeEnv :: Text -> TypeEnv
-parseTypeEnv src = either (error . parseErrorPretty' src) id
+parseTypeEnv src = either (error . errorBundlePretty) id
                  . runParser typeEnv ""
                  $ src
 
 -- parses type marked type annotations (even interleaved with code)
 parseMarkedTypeEnv' :: Text -> TypeEnv
-parseMarkedTypeEnv' src = either (error . parseErrorPretty' src) id $ parseMarkedTypeEnv "" src
+parseMarkedTypeEnv' src = case parseMarkedTypeEnv "" src of
+    Left err -> error $ errorBundlePretty err
+    Right env -> env
 
-parseMarkedTypeEnv :: String -> Text -> Either (ParseError Char Void) TypeEnv
+parseMarkedTypeEnv :: String -> Text -> Either (ParseErrorBundle Text Void) TypeEnv
 parseMarkedTypeEnv filename src = runParser markedTypeEnv filename (withoutCodeLines src)
 
 withoutCodeLines :: Text -> Text
