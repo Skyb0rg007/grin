@@ -5,27 +5,6 @@
 
 packages:
 - completed:
-    hackage: megaparsec-6.5.0@sha256:a1dfed92863607ea9f7609a0578d486761a052a4d01aaff95b90f25da2564346,6119
-    pantry-tree:
-      size: 2533
-      sha256: 8420b8dc9fa39c8e98ee0211e86d387813158bedf40ac1bf5cb5590b4ee7b509
-  original:
-    hackage: megaparsec-6.5.0
-- completed:
-    hackage: neat-interpolation-0.3.2.2@sha256:17c208f1171187e2d6beac5375f78d56458b872757616ebb2602c2bec4412879,2679
-    pantry-tree:
-      size: 448
-      sha256: 46048ca91755d557dc8aee3ebf911f4fad901786e3190fdd527b10597aa4405e
-  original:
-    hackage: neat-interpolation-0.3.2.2
-- completed:
-    hackage: QuickCheck-GenT-0.2.0@sha256:d11b7b4a3f7648895eff66376a00f763821ee955ce42a37fb918213a8eae88d6,1458
-    pantry-tree:
-      size: 293
-      sha256: a3e3065581974edfdc6951d894d93ed134e6136caa6f5e8593a58c2e039e076b
-  original:
-    hackage: QuickCheck-GenT-0.2.0
-- completed:
     size: 9873278
     subdir: llvm-hs
     url: https://github.com/csabahruska/llvm-hs/archive/868e23a13942703255979369defdb49ac57b6866.tar.gz

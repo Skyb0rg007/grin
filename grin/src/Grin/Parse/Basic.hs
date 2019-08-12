@@ -21,6 +21,10 @@ import Grin.TypeEnvDefs
 
 type Parser = Parsec Void Text
 
+-- Compat for Megaparsec 6.5.0
+anyChar :: Parser Char
+anyChar = satisfy (const True) <?> "character"
+
 keywords = Set.fromList
   [ "case", "of"
   , "fetch", "store", "update"
