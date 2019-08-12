@@ -21,6 +21,9 @@ import Grin.TypeEnvDefs
 
 type Parser = Parsec Void Text
 
+anyChar :: Parser Char
+anyChar = Text.Megaparsec.anySingle
+
 keywords = Set.fromList
   [ "case", "of"
   , "fetch", "store", "update"
